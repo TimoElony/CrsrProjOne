@@ -4,19 +4,49 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    margin: 3rem 5% 3rem 5%;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+:root{
+    --fs-1: .75rem;
+    --fs-2: 1rem;
+    --fs-3: 1.25rem;
+}
+  
+@media (min-width: 30em){
+    :root{
+      --fs-1: 1.125rem;
+      --fs-2: 1.5rem;
+      --fs-3: 2rem;
+    }
+
+    section {
+        flex-wrap: unset;
+    }
+
+    article {
+        flex: 1;
+    }
+
+
+  
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: var(--fs-3);
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: var(--fs-2);
+}
+
+p {
+    font-size: var(--fs-1);
 }
 
 header > img {
     display: block;
+    max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,3 +59,31 @@ nav ul {
 nav li {
     display: inline-block;
 }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    width: 40vw;
+}
+
+footer p {
+    font-size: var(--fs-1);
+}
+
