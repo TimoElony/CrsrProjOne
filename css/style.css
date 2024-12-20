@@ -75,16 +75,18 @@ nav a {
 
 section {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3vh;
     margin-bottom: 3vh;
     align-items: center;
+    justify-content: center;
 }
 
 article {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     border-width: 2vh;
     border-radius: 1vh 1vh 1vh 1vh;
     margin-bottom: 1vh;
@@ -139,14 +141,14 @@ button:hover a {
     border-radius: 1.5h 1.5vh 1.5vh 1.5vh;
     background:rgba(0, 0, 0, .45) url(../chicagoFruit.jpg);
     background-blend-mode: darken;
-    
     font-weight: 600;
 }
 
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 4vh 4vh 4vh 4vh;
 }
 
 footer img {
@@ -186,11 +188,12 @@ h2 img {
     section {
         flex-wrap: unset;
     }
-    .banner {
+    /*.banner {
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 2vh;
-    }
+    }*/
 
 
     article:hover {
