@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: rgba(188, 216, 128, 0.553);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -18,13 +18,14 @@ h1 {
 }
 
 h2 {
-    font-size: var(--fs-2);
+    font-size: var(--fs-3);
     margin-bottom: 1vh;
 }
 
 p {
     font-size: var(--fs-1);
     margin-top: 0vh;
+    text-align: center;
 }
 
 header > img {
@@ -32,6 +33,8 @@ header > img {
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 nav {
@@ -85,15 +88,15 @@ article {
     border-width: 2vh;
     border-radius: 1vh 1vh 1vh 1vh;
     margin-bottom: 1vh;
-    padding: 1vh 0vh 1vh 1vh;
-    background-color: beige;
+    padding: 1vh 1vh 1vh 1vh;
+    background-color: rgba(255, 255, 255, 0.932);
     text-overflow: ellipsis;
     box-shadow: 0.5vh 0.5vh 0.5vh lightgrey;
 }
 
 article > img {
-    max-width: 30vh;
-    margin-bottom: 2vh;
+    max-width: 100%;
+    margin: 2vh 2vh 2vh 2vh;
 }
 
 button {
@@ -127,14 +130,17 @@ button:hover a {
 }
 
 .banner {
-    display: flex;
-    flex-direction: column;
+    color: white;
+    text-decoration: ;
     gap: 0vh;
     margin-top: 0vh;
     margin-bottom: 0vh;
     border: 0.5vh orange;
     border-radius: 1.5h 1.5vh 1.5vh 1.5vh;
-
+    background:rgba(0, 0, 0, .45) url(../chicagoFruit.jpg);
+    background-blend-mode: darken;
+    
+    font-weight: 600;
 }
 
 footer {
@@ -162,10 +168,15 @@ h2 img {
     padding-right: 2vh;
 }
 
+@media (max-width: 500px){
+    nav ul {
+        max-width: 200px;
+        gap: 0.5vh;
+    }
+}
 
 
-
-@media (min-width: 40em){
+@media (min-width: 700px){
     :root{
       --fs-1: 1rem;
       --fs-2: 1.25rem;
@@ -181,15 +192,8 @@ h2 img {
         gap: 2vh;
     }
 
-    article {
-        display: inline;
-    }
 
     article:hover {
         box-shadow: 1vh 1vh 2vh grey;
     }
-    
-    
-    
-
 }
