@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: whitesmoke;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -12,8 +12,6 @@ body {
     --fs-2: 1rem;
     --fs-3: 1.25rem;
 }
-  
-
 
 h1 {
     font-size: var(--fs-3);
@@ -34,10 +32,6 @@ header > img {
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
-}
-
-#christmas {
-    background-image: url(../christmas-trees.jpg);
 }
 
 nav {
@@ -74,6 +68,34 @@ nav a {
     color: wheat;
 }
 
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-bottom: 3vh;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-width: 2vh;
+    border-radius: 1vh 1vh 1vh 1vh;
+    margin-bottom: 1vh;
+    padding: 1vh 0vh 1vh 1vh;
+    background-color: beige;
+    text-overflow: ellipsis;
+    box-shadow: 0.5vh 0.5vh 0.5vh lightgrey;
+}
+
+article > img {
+    max-width: 30vh;
+    margin-bottom: 2vh;
+}
+
 button {
     text-decoration: none;
     color: transparent;
@@ -100,30 +122,8 @@ button:hover a {
     background-color: brown;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vh;
-    margin-bottom: 3vh;
-    align-items: center;
-}
-
-article {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-width: 2vh;
-    border-radius: 1vh 1vh 1vh 1vh;
-    margin-bottom: 1vh;
-    padding: 1vh 0vh 1vh 1vh;
-    background-color: burlywood;
-    text-overflow: ellipsis;
-    box-shadow: 0.5vh 0.5vh 1vh grey;
-}
-
-article > img {
-    max-width: 30vh;
-    margin-bottom: 2vh;
+#christmas {
+    background-image: url(../christmas-trees.jpg);
 }
 
 .banner {
@@ -142,8 +142,6 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-
-
 
 footer img {
     max-width: 20vw;
