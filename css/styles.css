@@ -15,36 +15,27 @@ body {
   
 @media (min-width: 30em){
     :root{
-      --fs-1: 1.125rem;
-      --fs-2: 1.5rem;
-      --fs-3: 2rem;
+      --fs-1: 1rem;
+      --fs-2: 1.25rem;
+      --fs-3: 1.5rem;
     }
 
     section {
         flex-wrap: unset;
     }
-
-    article {
-        flex: 1;
-    }
-
-
   
 }
 
 h1 {
     font-size: var(--fs-3);
-    background-color: transparent;
 }
 
 h2 {
     font-size: var(--fs-2);
-    background-color: transparent;
 }
 
 p {
     font-size: var(--fs-1);
-    background-color: transparent;
 }
 
 header > img {
@@ -75,28 +66,39 @@ section {
 
 article {
     flex: 1;
+    border-width: 2vh;
+    border-radius: 0.5vh;
+    margin: auto;
+    padding: 1vh 1vh 1vh 1vh;
 }
 
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-footer div {
-    flex: 1;
-}
+
 
 footer img {
-    width: 40vw;
+    width: 20vw;
 }
 
 @keyframes hover-ani {
-    0%{color: blueviolet;}
-    50%{color:chartreuse;}
-    100%{color:aqua;}
+    0%{transform: translate(0,0);}
+    50%{transform: scale(1.5,0.5) translate(0,2vh);}
+    100%{transform: scale(1,1);}
+}
+
+main:hover .jumpy{
+    animation: hover-ani 2s linear infinite;
+}
+
+article img {
+    height: var(--fs-2);
+    padding-right: 2vh;
 }
 
 article:hover {
-    animation: hover-ani 3s linear;
+    box-shadow: 1vh 1vh 2vh grey;
 }
-
