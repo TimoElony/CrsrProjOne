@@ -47,7 +47,7 @@ nav {
 
 nav ul {
     display: flex;
-    max-width: 80vw;
+    max-width: 95vw;
     flex-wrap: wrap;
     justify-content: center;
     margin: 2vh 2vh 2vh 2vh;
@@ -76,6 +76,15 @@ nav a {
 
 button {
     text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1vh;
+
+}
+
+button a{
+    text-decoration: none;
     color: white;
     background-color: cadetblue;
     border-style: none;
@@ -87,19 +96,34 @@ button {
     font-size: small;
 }
 
+button:hover a {
+    background-color: brown;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
     gap: 3vh;
     margin-bottom: 3vh;
+    align-items: center;
 }
 
 article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     border-width: 2vh;
-    border-radius: 0.5vh;
+    border-radius: 1vh 1vh 1vh 1vh;
     margin-bottom: 1vh;
     padding: 1vh 0vh 1vh 1vh;
+    background-color: burlywood;
     text-overflow: ellipsis;
+    box-shadow: 0.5vh 0.5vh 1vh grey;
+}
+
+article > img {
+    max-width: 30vh;
+    margin-bottom: 2vh;
 }
 
 .banner {
@@ -140,14 +164,8 @@ h2 img {
     padding-right: 2vh;
 }
 
-article > img {
-    max-width: 30vh;
-    border: 2px solid black;
-}
 
-article:hover {
-    box-shadow: 1vh 1vh 2vh grey;
-}
+
 
 @media (min-width: 40em){
     :root{
@@ -164,5 +182,16 @@ article:hover {
         align-items: center;
         gap: 2vh;
     }
+
+    article {
+        display: inline;
+    }
+
+    article:hover {
+        box-shadow: 1vh 1vh 2vh grey;
+    }
+    
+    
+    
 
 }
