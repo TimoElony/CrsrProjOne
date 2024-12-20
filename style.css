@@ -128,7 +128,7 @@ button:hover a {
 }
 
 #christmas {
-    background-image: url(../christmas-trees.jpg);
+    background-image: url(christmas-trees.jpg);
 }
 
 .banner {
@@ -139,7 +139,7 @@ button:hover a {
     margin-bottom: 0vh;
     border: 0.5vh orange;
     border-radius: 1.5h 1.5vh 1.5vh 1.5vh;
-    background:rgba(0, 0, 0, .45) url(../chicagoFruit.jpg);
+    background:rgba(0, 0, 0, .45) url(chicagoFruit.jpg);
     background-blend-mode: darken;
     font-weight: 600;
 }
